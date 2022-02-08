@@ -1,1 +1,0 @@
-# urkkiga_main
