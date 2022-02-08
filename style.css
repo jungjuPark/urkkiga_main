@@ -1,0 +1,250 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+body{
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+
+/* 헤더 */
+header{
+    width: 100%;
+    position: relative;/*서브메뉴의 기준*/
+}
+
+.login{
+    width: 1080px;
+    height: 34px;
+    margin: auto;
+}
+.login ul{
+    float: right;
+}
+.login li{
+    float: left;
+    padding: 5px 0 5px 10px;
+    color: #ccc;
+}
+.login li a{
+    color: #ccc;
+}
+.login li a:hover{
+    color: #999;
+}
+
+.header_inner{
+    width: 1080px;
+    margin: auto;
+}
+.header_inner h1{
+    float: left;
+    padding: 10px 0;
+}
+.header_inner .nav{
+    float: right;
+}
+.nav> li{
+    float: left;
+}
+.nav> li> a{
+    display: block;
+    padding: 20px 0 20px 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav> li> a:hover{
+    color: #999;
+}
+
+.sub{
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    display: none;/*서브메뉴 안보이게 만들기*/
+}
+.sub ul{
+    width: 1080px;
+    margin: auto;
+}
+.sub ul li{
+    float: left;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.sub ul li:first-child{
+    padding-top: 60px;
+}
+.nav li:hover .sub{
+    display: block;/*서브메뉴 나타나게 만들기*/
+}
+
+/* 배너 */
+#banner img{
+    width: 100%;
+    display: block;
+}
+
+/* 컨텐츠1 */
+#content1{
+    width: 1080px;
+    height: 2800px;
+    margin: auto;
+}
+#content1 img{
+    display: block;
+}
+.title{
+    width: 347px;
+    margin: 100px auto 20px;
+}
+.img{
+    width: 627px;
+    height: 379px;
+}
+.text{
+   width: 453px;
+   height: 379px; 
+}
+.left{
+    float: left;
+    margin-bottom: 30px;
+}
+.right{
+    float: right;
+    margin-bottom: 30px;
+}
+.text h3{
+    font-size: 20px;
+    padding: 100px 0 20px;
+}
+.text h1{
+    font-size: 30px;
+    line-height: 35px;
+}
+.text.right{
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    padding: 70px 0;
+    clear: both;
+}
+.lab{
+    padding-top: 100px;
+}
+
+/* 컨텐츠2 */
+#content2{
+    width: 100%;
+    overflow: hidden;/*float요소의 높이 너비를 인식할 수 있음.*/
+}
+#content2 li{
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+    position: relative;
+}
+#content2 li:last-child{
+    margin-right: 0;
+}
+#content2 li img{
+    width: 100%;/*부모요소인 li크기에 맞춰짐*/
+}
+.white{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    opacity: 0;/*투명하게 만들기*/
+    transition: all 1s;
+}
+.white h1{
+    padding: 40% 0 5%;
+    font-size: 40px;
+}
+.white p{
+    font-size: 20px;
+}
+#content2 li:hover .white{
+    opacity: 1;
+}
+
+/* 컨텐츠3 */
+#content3{
+    width: 1080px;
+    margin: auto;
+    overflow: hidden;/*float된 요소 높이를 인식함.*/
+}
+#content3 li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;/*너비 높이 벗어나는 요소 안보이게 만들어줌*/
+}
+#content3 li:nth-child(5n){/*5의 배수*/
+    margin-right: 0;
+}
+#content3 li:hover img{
+    transform: scale(1.2, 1.2);
+}
+#content3 img{
+    transition: all 1s;
+}
+
+/* 푸터 */
+footer{
+    border-top: 1px solid #ccc;
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px 0;
+}
+footer li{
+    float: left;
+}
+footer li a{
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #999;
+    color: #999;
+    margin: 0 5px;
+}
+footer li a:hover{
+    background-color: #999;
+    color: #fff;
+}
+footer ul{
+    display: inline-block;
+}
+footer p{
+    padding: 30px 0 20px;
+}
+select{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    width: 150px;
+}
+
+.top_btn{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 22px 20px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
